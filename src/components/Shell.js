@@ -6,10 +6,11 @@ export default class Shell extends Component {
   render(props) {
     return (
         <section>
-            <Header title="PWA React App"/>
-            <main className="main">                
+            <Header title="NBA React App"/>
+            <main className="main"> 
                 <div className="card cardTemplate card-content" >
-                    {this.props.children}
+                    <h2>{this.props.title}</h2>               
+                         {this.props.children}
                 </div>
             </main>
         </section>
